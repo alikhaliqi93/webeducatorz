@@ -1,49 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>product-card-internal-css</title>
-    <style>
-        .h3-info{
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            color:red;
-        }
-        body{
-            font-family: sans-serif;
-        }
-        #input{
-            width: 400px;
-            background-color: rgb(171, 190, 231);
-            padding: 15px;
-        }
-        .product-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin-top: 20px;
-            background-color: rgb(238, 243, 245);
-        }
-       .product-card {
-          border: 1px solid #ccc;
-          flex: 1 1 150px;
-          max-width: 200px;
-          padding: 10px;
-        }
-        .product-card img {
-            width: 100%;
-            height: auto;
-
-        }
-
-        .product-card h3 {
-            font-size: 16px;
-            margin: 10px 0;
-            height: 38px; /* limit height for 2 lines */
-            overflow: hidden;
-            text-overflow: ellipsis;
-            line-height: 19px;
-            color:black;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>product-card-internal-css</title>
+  <style>
+    .h3-info {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      color: red;
+    }
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 10px;
+    }
+    #input {
+      width: 100%;
+      max-width: 400px;
+      background-color: rgb(171, 190, 231);
+      padding: 15px;
+      box-sizing: border-box;
+    }
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+      background-color: rgb(238, 243, 245);
+      justify-content: center;
+    }
+    .product-card {
+      border: 1px solid #ccc;
+      width: 100%;
+      max-width: 200px;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    .product-card img {
+      width: 100%;
+      height: auto;
+    }
+    .product-card h3 {
+      font-size: 16px;
+      margin: 10px 0;
+      height: 38px; /* limit height for 2 lines */
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 19px;
+      color: black;
     }
     .price {
       color: green;
@@ -60,68 +64,75 @@
       font-size: 14px;
     }
 
-    </style>
+    /* Responsive tweak */
+    @media (min-width: 500px) {
+      .product-card {
+        flex: 1 1 150px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="h3-info">
+  <div class="h3-info">
     <h3>Institution: Web Educatorz</h3>
     <h3>Teacher Name: Rehan Ali</h3>
     <h3>Student Name: Ali Aqa Khaliqi</h3>
     <h3>Batch: #34</h3>
     <h3>Title: Assignment #001</h3>
-    </div>
-    <label for="">Daraz: </label>
-    <input type="Search" placeholder="Search" name="" id="input">
-    <div class="product-container">
-    <div class="product-card">
-        <img src="pro7.webp" alt="Product">
-        <h3> Makeup Organizer Stand and Brush Holder Lipstick Organizer Tray Cosmetic Box Makeup Holder Organizer Stand Box High Quality .</h3>
-        <p class="price">Rs. 1500</p>
-        <p class="old-price">Rs. 2800</p>
-        <p class="discount">38% OFF</p>
-        <P class="rating">⭐⭐ 5.0 (600 reviews)</P>
+  </div>
 
+  <label for="input">Daraz: </label>
+  <input type="search" placeholder="Search" id="input" />
 
-    </div>
-     <div class="product-card">
-        <img src="pro6.webp" alt="Product">
-        <h3> Oppo A16 Back Cover Hello Kitty Mirror Folding Bracket Luxury 6D Plating Case Soft Silicone Case - Mirror Hello Kitty Back Cover .</h3>
-        <p class="price">Rs. 1500</p>
-        <p class="old-price">Rs. 2800</p>
-        <p class="discount">38% OFF</p>
-        <P class="rating">⭐⭐ 5.0 (600 reviews)</P>
+  <div class="product-container">
+    <div class="product-card">
+      <img src="pro7.webp" alt="Product" />
+      <h3>Makeup Organizer Stand and Brush Holder Lipstick Organizer Tray Cosmetic Box Makeup Holder Organizer Stand Box High Quality</h3>
+      <p class="price">Rs. 1500</p>
+      <p class="old-price">Rs. 2800</p>
+      <p class="discount">38% OFF</p>
+      <p class="rating">⭐⭐ 5.0 (600 reviews)</p>
     </div>
     <div class="product-card">
-        <img src="pro5.webp" alt="Product">
-        <h3> Plating Case Soft Silicone Case - Mirror Hello Kitty Back Cover .</h3>
-        <p class="price">Rs. 1500</p>
-        <p class="old-price">Rs. 2800</p>
-        <p class="discount">38% OFF</p>
-        <P class="rating">⭐⭐ 5.0 (600 reviews)</P>
+      <img src="pro6.webp" alt="Product" />
+      <h3>Oppo A16 Back Cover Hello Kitty Mirror Folding Bracket Luxury 6D Plating Case Soft Silicone Case</h3>
+      <p class="price">Rs. 1500</p>
+      <p class="old-price">Rs. 2800</p>
+      <p class="discount">38% OFF</p>
+      <p class="rating">⭐⭐ 5.0 (600 reviews)</p>
     </div>
     <div class="product-card">
-        <img src="pro4.webp" alt="Product">
-        <h3> Folding Bracket Luxury 6D Plating Case Soft Silicone Case - Mirror Hello Kitty Back k Cover .</h3>
-        <p class="price">Rs. 1500</p>
-        <p class="old-price">Rs. 2800</p>
-        <p class="discount">38% OFF</p>
-        <P class="rating">⭐⭐ 5.0 (600 reviews)</P>
+      <img src="pro5.webp" alt="Product" />
+      <h3>Plating Case Soft Silicone Case - Mirror Hello Kitty Back Cover</h3>
+      <p class="price">Rs. 1500</p>
+      <p class="old-price">Rs. 2800</p>
+      <p class="discount">38% OFF</p>
+      <p class="rating">⭐⭐ 5.0 (600 reviews)</p>
     </div>
     <div class="product-card">
-        <img src="pro2.webp" alt="Product">
-        <h3> Headphones, P47 Bluetooth Foldable Headset with Microphone Suppse - Mirror Hello Kitty Back k Cover .</h3>
-        <p class="price">Rs. 1500</p>
-        <p class="old-price">Rs. 2800</p>
-        <p class="discount">38% OFF</p>
-        <P class="rating">⭐⭐ 5.0 (600 reviews)</P>
+      <img src="pro4.webp" alt="Product" />
+      <h3>Folding Bracket Luxury 6D Plating Case Soft Silicone Case</h3>
+      <p class="price">Rs. 1500</p>
+      <p class="old-price">Rs. 2800</p>
+      <p class="discount">38% OFF</p>
+      <p class="rating">⭐⭐ 5.0 (600 reviews)</p>
     </div>
     <div class="product-card">
-        <img src="pro1.webp" alt="Product">
-        <h3> Headphones, P47 Bluetooth Foldable Headset with Microphone Suppse - Mirror Hello Kitty Back k Cover .</h3>
-        <p class="price">Rs. 1500</p>
-        <p class="old-price">Rs. 2800</p>
-        <p class="discount">38% OFF</p>
-        <P class="rating">⭐⭐ 5.0 (600 reviews)</P>
+      <img src="pro2.webp" alt="Product" />
+      <h3>Headphones, P47 Bluetooth Foldable Headset with Microphone Support</h3>
+      <p class="price">Rs. 1500</p>
+      <p class="old-price">Rs. 2800</p>
+      <p class="discount">38% OFF</p>
+      <p class="rating">⭐⭐ 5.0 (600 reviews)</p>
     </div>
+    <div class="product-card">
+      <img src="pro1.webp" alt="Product" />
+      <h3>Headphonesss, P47 Bluetooth Foldable Headset with Microphone Support </h3>
+      <p class="price">Rs. 1500</p>
+      <p class="old-price">Rs. 2800</p>
+      <p class="discount">38% OFF</p>
+      <p class="rating">⭐ 5.0 (600 reviews)</p>
+    </div>
+  </div>
 </body>
 </html>
